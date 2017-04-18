@@ -5,4 +5,5 @@
 
 废话少说直接先上图
 ![模拟贪吃蛇大作战的控制View](http://upload-images.jianshu.io/upload_images/3846387-acabc3f196ccad2d.gif?imageMogr2/auto-orient/strip)
+
 嘿嘿肯定很失望吧 ,虽然简陋了点  但是感觉还是不错的,拓展性大,可以根据角度和方向回调实现自己的需求.
