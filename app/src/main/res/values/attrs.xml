@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- areaBackground 设置区域背景
+         pressAreaBackground 区域按下背景
+         rockerBackground 设置摇杆的样式
+         pressRockerBackground 摇杆按下的背景
+         rockerScale 设置摇杆的相对于背景的比例
+         rockerCallBackMode 有变化就回调，或者是方向改变才会回调-->
+    <declare-styleable name="RockerView">
+        <attr name="areaBackground" format="color|reference" />
+        <attr name="rockerBackground" format="color|reference" />
+        <attr name="rockerScale" format="float"/>
+        <attr name="rockerCallBackMode">
+            <flag name="CALL_BACK_MODE_MOVE" value="0" />
+            <flag name="CALL_BACK_MODE_STATE_CHANGE" value="1" />
+        </attr>
+        <attr name="pressAreaBackground" format="color|reference" />
+        <attr name="pressRockerBackground" format="color|reference" />
+    </declare-styleable>
+
+</resources>

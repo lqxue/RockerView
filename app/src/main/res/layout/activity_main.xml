@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zcsj.rockerview.RockerView
+        android:id="@+id/rocker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        app:areaBackground="#bbb"
+        app:rockerBackground="#99494949"
+        app:rockerCallBackMode="CALL_BACK_MODE_STATE_CHANGE"
+        app:rockerScale="0.44" />
+
+    <com.zcsj.rockerview.CircleQuickenView
+        android:id="@+id/press_rocker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:areaBackground="#bbb"
+        app:pressAreaBackground="#99b5b5b5"
+        app:pressRockerBackground="@mipmap/press"
+        app:rockerBackground="@mipmap/nopress"
+        app:rockerScale="0.7" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/tv_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="匀速" />
+
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/tv_shake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前方向：" />
+
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/tv_angle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前角度：" />
+
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/tv_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前设置模式：" />
+    </LinearLayout>
+</RelativeLayout>
